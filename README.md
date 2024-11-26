@@ -1,4 +1,3 @@
-I am designing a webpage with link to my music releases. I am currently 
-building out functionality for music and video players.
+# This is a sample of an artist landing page.
 
-
+I don't think I will be doing any more music in the future, but I used my own personal artist collection as assets.

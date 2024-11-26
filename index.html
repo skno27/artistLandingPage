@@ -29,106 +29,82 @@
   </nav>
   <body>
     <h1 class="center">SKENO</h1>
+    <div id="scroll-container">
+      <!-- start -->
+      <section>
+        <h2 class="topic">ALBUMS</h2>
+        <div class="albums">
+          <div class="album">
+            <div class="icon">
+              <a
+                href="https://music.youtube.com/playlist?list=OLAK5uy_n22Pj8Z7gg21MMfieWtIHYvqHeBkiR8DA">
+                <img
+                  src="./static/badthoughts.jpeg"
+                  alt="bad thoughts EP album cover" />
+                <p class="label">BAD THOUGHTS EP</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end albums -->
 
-    <!-- start -->
-    <section>
-      <h2 class="topic">ALBUMS</h2>
-      <div class="albums">
-        <div class="album">
+        <h2 class="topic">SINGLES</h2>
+        <div id="singles">
           <div class="icon">
             <a
-              href="https://music.youtube.com/playlist?list=OLAK5uy_n22Pj8Z7gg21MMfieWtIHYvqHeBkiR8DA">
+              href="https://music.youtube.com/playlist?list=OLAK5uy_krNtJuWvADY07NAdYRp82g_uFo2oKDadQ">
               <img
-                src="./static/badthoughts.jpeg"
-                alt="bad thoughts EP album cover" />
-              <p class="label">BAD THOUGHTS EP</p>
+                src="./static/slurp.jpeg"
+                alt="slurp album cover" />
+              <p class="label">SLURP</p>
+            </a>
+          </div>
+
+          <div class="icon">
+            <a
+              href="https://music.youtube.com/playlist?list=OLAK5uy_mzD2IJ0iKA8nOV5WNtYE3e_lvf-G-nQZ0">
+              <img
+                src="./static/clowns.jpeg"
+                alt="clowns album cover" />
+              <p class="label">CLOWNS</p>
+            </a>
+          </div>
+
+          <div class="icon">
+            <a
+              href="https://music.youtube.com/playlist?list=OLAK5uy_mUvRpak6aXj4D0GVyuWscv5otBWOthkx4">
+              <img
+                src="./static/911.jpeg"
+                alt="911 album cover" />
+              <p class="label">911</p>
             </a>
           </div>
         </div>
-      </div>
-      <!-- end albums -->
+        <!-- end singles -->
+      </section>
 
-      <h2 class="topic">SINGLES</h2>
-      <div class="singles">
-        <div class="icon">
-          <a
-            href="https://music.youtube.com/playlist?list=OLAK5uy_krNtJuWvADY07NAdYRp82g_uFo2oKDadQ">
+      <section id="players">
+        <!-- <h1 style="font-size: larger">Some Music</h1> -->
+
+        <div id="player">
+          <audio
+            id="background-audio"
+            autoplay></audio>
+        </div>
+      </section>
+
+      <footer>
+        <div id="end-div">
+          <div class="logo">
             <img
-              src="./static/slurp.jpeg"
-              alt="slurp album cover" />
-            <p class="label">SLURP</p>
-          </a>
+              id="logo"
+              src="./static/mksTrim.png"
+              alt="Mer Kuti Sound Logo" />
+          </div>
+          <div id="finish-line"></div>
         </div>
-
-        <div class="icon">
-          <a
-            href="https://music.youtube.com/playlist?list=OLAK5uy_mzD2IJ0iKA8nOV5WNtYE3e_lvf-G-nQZ0">
-            <img
-              src="./static/clowns.jpeg"
-              alt="clowns album cover" />
-            <p class="label">CLOWNS</p>
-          </a>
-        </div>
-
-        <div class="icon">
-          <a
-            href="https://music.youtube.com/playlist?list=OLAK5uy_mUvRpak6aXj4D0GVyuWscv5otBWOthkx4">
-            <img
-              src="./static/911.jpeg"
-              alt="911 album cover" />
-            <p class="label">911</p>
-          </a>
-        </div>
-      </div>
-      <!-- end singles -->
-    </section>
-
-    <section class="players">
-      <h1 style="font-size: larger">UNRELEASED</h1>
-      <h2>Music</h2>
-
-      <div class="player">
-        <audio
-          id="audio-player"
-          controls>
-          <source src="" />
-        </audio>
-      </div>
-
-      <h2>Videos</h2>
-      <div
-        id="video"
-        class="player">
-        <video
-          id="lucky"
-          controls
-          class="videoI">
-          <source
-            src="./static/lucky_dance.mp4"
-            type="video/mp4" />
-          <!-- <source
-            src="./../static/marcel.mp4"
-            type="video/mp4" /> -->
-        </video>
-        <div>
-          <button
-            onclick="playMedia('./static/lucky_dance.mp4', 'video', '#lucky')">
-            Play Lucky Dance Video
-          </button>
-          <!-- <button onclick="playMedia('./../static/marcel.mp4')">
-            Play Marcel Video
-          </button> -->
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="logo">
-        <img
-          src="./static/mksTrim.png"
-          alt="Mer Kuti Sound Logo" />
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <script src="./src/player.js"></script>
     <script>

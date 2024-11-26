@@ -1,7 +1,7 @@
 const playlist = [
-  "../static/229-lean_01.31.mp3",
-  "../static/232-In a Hurry (158 bpm SKNO)_02.03.mp3",
-  "../static/234-Adoration (158 bpm SKNO)_02.03.mp3",
+  "./static/229-lean_01.31.mp3",
+  "./static/232-In a Hurry (158 bpm SKNO)_02.03.mp3",
+  "./static/234-Adoration (158 bpm SKNO)_02.03.mp3",
 ];
 
 let currentSong = 0;
